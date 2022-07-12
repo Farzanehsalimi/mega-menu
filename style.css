@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.dropdown {
-    overflow: hidden;
-}
-
 ul li a {
     display: block;
     text-decoration: none;
@@ -22,55 +18,50 @@ ul li a:hover {
     color: black;
 }
 
-.navbar {
-    display: flex;
-    height: 60px;
+.icons {
+    width: 1.5rem;
 }
 
-ul {
-    display: flex;
-    gap: .3rem;
+.first-sub-menu {
+    display: none;
+    left: 0;
+    right: 0;
+}
+
+.main-ul>li:hover .first-sub-menu {
+    display: block;
+}
+
+.second-sub-menu {
+    display: none;
+}
+
+.first-sub-menu>li:hover .second-sub-menu {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 250px;
+    z-index: 1;
+}
+
+.third-sub-menu {
+    display: none;
+}
+
+.second-sub-menu>li:hover .third-sub-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 200px;
+    z-index: 2;
 }
 
 .menu-gray {
     opacity: .6;
 }
 
-.navbar .menu a {
-    padding: 10px 12px;
-}
-
-.navbar .menu a:hover {
-    border-bottom: 2px solid red;
-    transition: .2s;
-}
-
-ul .under-kala {
-    display: flex;
-    flex-direction: column;
-}
-
-ul li ul li {
-    display: none
-}
-
-ul li:hover ul li {
-    display: block;
-}
-
-ul li ul li ul li {
-    display: none
-}
-
-ul li:hover ul li ul li {
-    display: block;
-}
-
-.hamburger,
-.best-selling-fire,
-.discount,
-.circle,
-.location {
-    width: 20px;
-    height: 20px;
+.city {
+    color: black;
+    text-decoration: none;
 }
